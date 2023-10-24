@@ -1,0 +1,16 @@
+<header class="home-header">
+  Mukhit Nassyrov
+
+  <img
+    width="100px"
+    height="50px"
+    src="https://variety.com/wp-content/uploads/2023/01/Twitter-Third-Party-Apps.png"
+  />
+</header>
+
+<main>
+  <h2>My posts</h2>
+  <div *ngFor="let post of myPosts">
+    <app-post [post]="post"></app-post>
+  </div>
+</main>
