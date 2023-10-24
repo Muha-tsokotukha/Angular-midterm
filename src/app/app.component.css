@@ -127,3 +127,33 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.app-nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 15px;
+  margin: 0 10px;
+  font-size: 18px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.nav-link:hover {
+  border-color: #007bff; /* Blue color on hover */
+  border-radius: 5px;
+}
+
+.home-header {
+  background-color: #000;
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

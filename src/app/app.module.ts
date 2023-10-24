@@ -7,14 +7,25 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { PostComponent } from './post/post.component';
 import { FormsModule } from '@angular/forms';
+import { FeedComponent } from './feed/feed.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, PostComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    HeaderComponent,
+    PostComponent,
+    FeedComponent,
+    AboutUsComponent,
+  ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', component: AppComponent },
+      { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
+      { path: 'feed', component: FeedComponent },
+      { path: 'about-us', component: AboutUsComponent },
     ]),
     FormsModule,
   ],
