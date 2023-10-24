@@ -1,12 +1,15 @@
 <div class="feed">
   <h1>Feed</h1>
-  <div *ngFor="let post of feedPosts" class="feed-card">
+  <div
+    *ngFor="let post of feedPosts"
+    class="feed-card"
+    [appHighlight]="post.likes"
+  >
     <h2>{{ post.title }}</h2>
     <p>{{ post.description }}</p>
     <div class="interaction">
       <span class="likes">{{ post.likes }} Likes</span>
       <button (click)="likePost(post)">Like</button>
     </div>
-    <!-- You can also add a comment section if needed -->
   </div>
 </div>

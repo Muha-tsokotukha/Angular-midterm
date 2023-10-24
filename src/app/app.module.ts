@@ -9,6 +9,7 @@ import { PostComponent } from './post/post.component';
 import { FormsModule } from '@angular/forms';
 import { FeedComponent } from './feed/feed.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     PostComponent,
     FeedComponent,
     AboutUsComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
