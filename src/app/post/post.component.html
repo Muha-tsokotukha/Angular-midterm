@@ -2,11 +2,22 @@
   <div class="card-body">
     <h5 class="card-title">{{ post.title }}</h5>
     <div class="card-text">{{ post.description }}</div>
+
+    <div class="likes-section">
+      <button (click)="onLike()">Like</button>
+      <span>
+        <span class="likes-count">{{ post.likes }}</span> Likes
+      </span>
+    </div>
+
     <div class="comments">
       <h6>Comments:</h6>
       <ul>
         <li *ngFor="let comment of post.comments">{{ comment }}</li>
       </ul>
+
+      <input type="text" placeholder="Add a comment" [(ngModel)]="newComment" />
+      <button (click)="onAddComment()">Add Comment</button>
     </div>
   </div>
 </div>

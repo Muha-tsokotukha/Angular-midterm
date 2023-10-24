@@ -10,3 +10,29 @@ main {
   display: grid;
   justify-content: center;
 }
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-form {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.input-field {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+  margin: 0;
+}

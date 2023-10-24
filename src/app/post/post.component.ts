@@ -7,4 +7,16 @@ import { Component, Input } from '@angular/core';
 })
 export class PostComponent {
   @Input() post: any;
+  newComment = '';
+
+  onLike() {
+    this.post.likes += 1;
+  }
+
+  onAddComment() {
+    if (this.newComment.trim() !== '') {
+      this.post.comments.push(this.newComment);
+      this.newComment = ''; // Reset the input field
+    }
+  }
 }

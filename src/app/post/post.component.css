@@ -42,3 +42,30 @@ li {
   margin: 5px 0;
   font-size: 0.9rem;
 }
+
+.likes-section {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.likes-section button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.likes-section button:hover {
+  background-color: #0056b3;
+}
+
+.likes-count {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
